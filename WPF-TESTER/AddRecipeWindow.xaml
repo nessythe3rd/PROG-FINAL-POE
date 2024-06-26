@@ -47,13 +47,14 @@
                 <ComboBoxItem Content="400 grams"/>
                 <ComboBoxItem Content="450 grams"/>
                 <ComboBoxItem Content="500 grams"/>
-                <ComboBoxItem Content="1 cups"/>
+                <ComboBoxItem Content="1 cup"/>
                 <ComboBoxItem Content="2 cups"/>
             </ComboBox>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button Content="Add Recipe" Width="150" Margin="5" Click="AddRecipe_Click"/>
                 <Button Content="View Recipes" Width="150" Margin="5" Click="ViewRecipes_Click"/>
+                <Button Content="Scale Recipe" Width="150" Margin="5" Click="ScaleRecipe_Click"/>
                 <Button Content="Back" Width="150" Margin="5" Click="Back_Click"/>
             </StackPanel>
         </StackPanel>

@@ -16,6 +16,12 @@ namespace WPF_TESTER
         public MainWindow()
         {
             InitializeComponent();
+
+            // Initialize the Recipes collection if it is null
+            if (AddRecipeWindow.Recipes == null)
+            {
+                AddRecipeWindow.Recipes = new List<Recipe>();
+            }
         }
 
         private void AddRecipe_Click(object sender, RoutedEventArgs e)
@@ -32,7 +38,7 @@ namespace WPF_TESTER
 
         private void ScaleRecipe_Click(object sender, RoutedEventArgs e)
         {
-            var scaleRecipeWindow = new ScaleRecipeWindow();
+            var scaleRecipeWindow = new ScaleRecipeWindow(AddRecipeWindow.Recipes);
             scaleRecipeWindow.Show();
         }
 
