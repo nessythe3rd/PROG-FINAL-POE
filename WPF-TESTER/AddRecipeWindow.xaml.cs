@@ -22,7 +22,7 @@ namespace WPF_TESTER
         {
             InitializeComponent();
         }
-
+        //Add Recipe functions
         private void AddRecipe_Click(object sender, RoutedEventArgs e)
         {
             var recipeName = RecipeName.Text;
@@ -52,11 +52,12 @@ namespace WPF_TESTER
                 ClearTextBoxes();
             }
             else
+            //Error message if user doesnt fill all boxes
             {
                 MessageBox.Show("Please fill all fields including Calorie Measurements and Recipe Measurements.");
             }
         }
-
+        //Clear text boxes
         private void ClearTextBoxes()
         {
             RecipeName.Text = "";
@@ -78,7 +79,7 @@ namespace WPF_TESTER
             var scaleRecipeWindow = new ScaleRecipeWindow(Recipes);
             scaleRecipeWindow.Show();
         }
-
+        //Back Button
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             this.Close();

@@ -21,9 +21,10 @@ namespace WPF_TESTER
             InitializeComponent();
             RecipesListView.ItemsSource = recipes;
         }
-
+        //Back Button 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
+            
             this.Close();
         }
     }

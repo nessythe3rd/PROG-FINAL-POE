@@ -24,7 +24,7 @@ namespace WPF_TESTER
             AllRecipes = recipes;
             AddText(null, null); // Initialize placeholder text
         }
-
+        //Search button
         private void Search_Click(object sender, RoutedEventArgs e)
         {
             var nameQuery = SearchByName.Text.ToLower();
@@ -38,11 +38,6 @@ namespace WPF_TESTER
             ).OrderBy(r => r.Name).ToList();
 
             RecipeList.ItemsSource = filteredRecipes.Select(r => r.Name).ToList();
-        }
-
-        private void Back_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
         }
 
         private void RemoveText(object sender, EventArgs e)
@@ -74,6 +69,11 @@ namespace WPF_TESTER
                 SearchByCalories.Text = "";
                 SearchByCalories.Foreground = Brushes.Gray;
             }
+        }
+        //Back Button
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

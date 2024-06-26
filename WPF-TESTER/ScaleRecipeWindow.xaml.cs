@@ -74,7 +74,7 @@ namespace WPF_TESTER
             }
             return measurements;
         }
-
+        //Back Button
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             this.Close();

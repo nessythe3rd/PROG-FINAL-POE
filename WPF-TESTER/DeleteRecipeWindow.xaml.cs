@@ -33,11 +33,13 @@ namespace WPF_TESTER
                 RecipesListView.Items.Add(recipe);
             }
         }
-
+        //Delete Recipe
         private void DeleteRecipe_Click(object sender, RoutedEventArgs e)
         {
             if (RecipesListView.SelectedItem != null)
-            {
+            { 
+                //Messge when recipe is deleted
+
                 var selectedRecipe = (Recipe)RecipesListView.SelectedItem;
                 _recipes.Remove(selectedRecipe);
                 LoadRecipes();
@@ -45,10 +47,11 @@ namespace WPF_TESTER
             }
             else
             {
+                //Error message if user doesnt pick recipe to delete
                 MessageBox.Show("Please select a recipe to delete.");
             }
         }
-
+        //Back Button
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             this.Close();

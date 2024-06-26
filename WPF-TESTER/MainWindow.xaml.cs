@@ -53,7 +53,7 @@ namespace WPF_TESTER
             var filterRecipeWindow = new FilterRecipeWindow(AddRecipeWindow.Recipes);
             filterRecipeWindow.Show();
         }
-
+        //Exit app completely
         private void ExitApp_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
