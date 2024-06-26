@@ -66,7 +66,7 @@ namespace WPF_TESTER
 
         private string ScaleMeasurements(string measurements, double scaleFactor)
         {
-            // Assuming measurements are numeric values with optional units
+            //Measurements are numebric
             string[] parts = measurements.Split(' ');
             if (parts.Length > 0 && double.TryParse(parts[0], out double value))
             {
