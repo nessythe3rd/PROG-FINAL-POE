@@ -1,0 +1,25 @@
+﻿<Window x:Class="WPF_TESTER.DeleteRecipeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_TESTER"
+        mc:Ignorable="d"
+        Title="Delete Recipe" Height="450" Width="800">
+    <Grid Background="LightBlue">
+        <StackPanel>
+            <TextBlock FontSize="16" FontWeight="Bold" Width="128" RenderTransformOrigin="0.692,0.657"><Run Language="en-za" Text="Delete A "/><Run Text="Recipe"/></TextBlock>
+            <ListView x:Name="RecipesListView" Margin="10" SelectionMode="Single">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="200"/>
+                        <GridViewColumn Header="Ingredients" DisplayMemberBinding="{Binding Ingredients}" Width="200"/>
+                        <GridViewColumn Header="Instructions" DisplayMemberBinding="{Binding Instructions}" Width="200"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Button Content="Delete Recipe" Margin="10" Click="DeleteRecipe_Click"/>
+            <Button Content="Back" Width="200" Margin="10" Click="Back_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

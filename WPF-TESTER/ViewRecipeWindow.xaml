@@ -1,0 +1,28 @@
+﻿<Window x:Class="WPF_TESTER.ViewRecipeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="View Recipes" Height="450" Width="800">
+    <Grid Background="LightBlue">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock FontSize="20" Foreground="Black" FontWeight="Bold"><Run Language="en-za" Text="Recipe Viewer"/></TextBlock>
+            <ListView x:Name="RecipesListView" Width="600" Height="300" Margin="10">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Recipe Name" DisplayMemberBinding="{Binding Name}" Width="150"/>
+                        <GridViewColumn Header="Number of Ingredients" DisplayMemberBinding="{Binding NumberOfIngredients}" Width="150"/>
+                        <GridViewColumn Header="Ingredients" DisplayMemberBinding="{Binding Ingredients}" Width="150"/>
+                        <GridViewColumn Header="Instructions" DisplayMemberBinding="{Binding Instructions}" Width="150"/>
+                        <GridViewColumn Header="Calorie Count" DisplayMemberBinding="{Binding CalorieMeasurements}" Width="100"/>
+                        <GridViewColumn Header="Recipe Measurements" DisplayMemberBinding="{Binding RecipeMeasurements}" Width="100"/>
+                        <GridViewColumn Header="Food Group" DisplayMemberBinding="{Binding FoodGroup}" Width="100"/>
+                        <!-- New column for Food Group -->
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Button Content="Back" Width="200" Margin="10" Click="Back_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

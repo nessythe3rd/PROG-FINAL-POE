@@ -1,0 +1,23 @@
+﻿<Window x:Class="WPF_TESTER.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_TESTER"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="LightBlue">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="225" Width="340">
+            <Button Content="Add Recipe" Click="AddRecipe_Click" Margin="5" BorderBrush="Black" Background="#FFB0D7F5"/>
+            <Button Content="View Recipe" Click="ViewRecipe_Click" Margin="5" Background="#FFB0D7F5"/>
+            <Button Content="Scale Recipe" Click="ScaleRecipe_Click" Margin="5" Background="#FFB0D7F5"/>
+            <Button Content="Delete Recipe" Click="DeleteRecipe_Click" Margin="5" Background="#FFB0D7F5"/>
+            <Button Content="Filter Recipe" Click="FilterRecipe_Click" Margin="5" Background="#FFB0D7F5"/>
+            <Button Content="Exit App" Click="ExitApp_Click" Margin="5" Background="#FFB0D7F5"/>
+        </StackPanel>
+        <TextBlock HorizontalAlignment="Center" Margin="0,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"><Run Language="en-gb" Text="RECIPE APP"/></TextBlock>
+        <Image Margin="456,77,23,16" Source="/IMAGES/cooking-removebg-preview.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="153" Text="ST10214012" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="17,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="220" Foreground="White"><Run Language="en-za" Text="Mogammad Ganeef Salie"/><LineBreak/><Run Language="en-za"/></TextBlock>
+    </Grid>
+</Window>
