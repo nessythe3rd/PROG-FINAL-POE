@@ -25,7 +25,7 @@ Scale Recipe
 
 Exit app
 -Allows user to exit app.
---------------------
+
 How To Use.
 -------------------
 User will run the app and be presented with the main page with all the main pages options, the user will then have to enter the recipe names,ingredients,enter ingredients,food groups,recipe instructions,calorie measurements and recipe measuresments.
