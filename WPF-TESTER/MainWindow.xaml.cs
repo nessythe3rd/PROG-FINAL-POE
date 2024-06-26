@@ -35,7 +35,7 @@ namespace WPF_TESTER
             var viewRecipeWindow = new ViewRecipeWindow(AddRecipeWindow.Recipes);
             viewRecipeWindow.Show();
         }
-
+        //Scale recipe button
         private void ScaleRecipe_Click(object sender, RoutedEventArgs e)
         {
             var scaleRecipeWindow = new ScaleRecipeWindow(AddRecipeWindow.Recipes);
