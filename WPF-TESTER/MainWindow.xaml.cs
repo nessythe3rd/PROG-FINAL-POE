@@ -29,7 +29,7 @@ namespace WPF_TESTER
             var addRecipeWindow = new AddRecipeWindow();
             addRecipeWindow.Show();
         }
-
+        //View Recipe
         private void ViewRecipe_Click(object sender, RoutedEventArgs e)
         {
             var viewRecipeWindow = new ViewRecipeWindow(AddRecipeWindow.Recipes);
