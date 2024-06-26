@@ -23,7 +23,7 @@ namespace WPF_TESTER
                 AddRecipeWindow.Recipes = new List<Recipe>();
             }
         }
-
+        //add recipe button
         private void AddRecipe_Click(object sender, RoutedEventArgs e)
         {
             var addRecipeWindow = new AddRecipeWindow();
