@@ -41,13 +41,13 @@ namespace WPF_TESTER
             var scaleRecipeWindow = new ScaleRecipeWindow(AddRecipeWindow.Recipes);
             scaleRecipeWindow.Show();
         }
-
+        //Delete recipe button
         private void DeleteRecipe_Click(object sender, RoutedEventArgs e)
         {
             var deleteRecipeWindow = new DeleteRecipeWindow(AddRecipeWindow.Recipes);
             deleteRecipeWindow.Show();
         }
-
+        //Filter recipe button
         private void FilterRecipe_Click(object sender, RoutedEventArgs e)
         {
             var filterRecipeWindow = new FilterRecipeWindow(AddRecipeWindow.Recipes);

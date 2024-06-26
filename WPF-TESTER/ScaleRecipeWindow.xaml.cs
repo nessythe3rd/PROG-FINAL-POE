@@ -43,7 +43,7 @@ namespace WPF_TESTER
                 }
             }
         }
-
+        //Scales recipe ingredients and measurements
         private void Scale_Click(object sender, RoutedEventArgs e)
         {
             if (selectedRecipe == null)
