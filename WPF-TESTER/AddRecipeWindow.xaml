@@ -9,7 +9,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="675" Height="659">
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="678" Height="656">
             <TextBlock FontSize="20" Foreground="Black" Margin="0 10 0 5"><Run Language="en-za" Text=""/><Run Text="Recipe Name"/></TextBlock>
             <TextBox x:Name="RecipeName" Width="200" Margin="0 0 0 10"/>
 
@@ -30,13 +30,13 @@
                 <ComboBoxItem Content="Sweets"/>
             </ComboBox>
 
-            <TextBlock FontSize="20" Foreground="Black" Margin="0 10 0 5"><Run Language="en-za" Text="                                       "/><Run Text="Instructions"/></TextBlock>
+            <TextBlock FontSize="20" Foreground="Black" Margin="0 10 0 5"><Run Language="en-za" Text=""/><Run Text="Instructions"/></TextBlock>
             <TextBox x:Name="Instructions" Width="350" Height="100" Margin="0 0 0 10"/>
 
-            <TextBlock FontSize="20" Foreground="Black" Margin="0 10 0 5"><Run Language="en-za" Text="                              "/><Run Text="Calorie Measurements"/></TextBlock>
+            <TextBlock FontSize="20" Foreground="Black" Margin="0 10 0 5"><Run Language="en-za" Text=""/><Run Text="Calorie Measurements"/></TextBlock>
             <TextBox x:Name="CalorieMeasurements" Width="200" Margin="0 0 0 10"/>
 
-            <TextBlock FontSize="20" Foreground="Black" Margin="0 10 0 5"><Run Language="en-za" Text="                               "/><Run Text="Recipe Measurements"/></TextBlock>
+            <TextBlock FontSize="20" Foreground="Black" Margin="0 10 0 5"><Run Language="en-za" Text=""/><Run Text="Recipe Measurements"/></TextBlock>
             <ComboBox x:Name="RecipeMeasurements" Width="200" Margin="0 0 0 10" SelectionChanged="RecipeMeasurements_SelectionChanged">
                 <ComboBoxItem Content="100 grams" IsSelected="True"/>
                 <ComboBoxItem Content="150 grams"/>

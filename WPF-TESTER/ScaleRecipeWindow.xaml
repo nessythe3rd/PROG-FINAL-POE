@@ -9,8 +9,7 @@
     <Grid Background="LightBlue">
         <StackPanel>
             <TextBlock Text="Scale Recipe" FontSize="16" FontWeight="Bold" Margin="10"/>
-            <ListBox x:Name="RecipesListBox" Margin="10"/>
-            <TextBox x:Name="ScalingFactorTextBox" Margin="10"/>
+            <TextBox x:Name="ScalingFactorTextBox" Margin="10" Height="133" Width="762"/>
             <Button Content="Scale Recipe"  Margin="10"/>
             <Button Content="Back" Width="200" Margin="10" Click="Back_Click"/>
         </StackPanel>
