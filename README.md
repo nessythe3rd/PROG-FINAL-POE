@@ -26,7 +26,7 @@ Scale Recipe
 Exit app
 -Allows user to exit app.
 
-How To Use.
+How To Use
 -------------------
 User will run the app and be presented with the main page with all the main pages options, the user will then have to enter the recipe names,ingredients,enter ingredients,food groups,recipe instructions,calorie measurements and recipe measuresments.
 Once the user has entered all of the information he will then choose to save recipe and a notifcation will pop up to say that the recipe has been added. To view the recipe the user will have to go back to the main page and press the view recipe button to view all the recipes added.If the user isnt happy about one recipe the user is able to go back to the homepage and click on the delete recipe button to which he will be shown all the recipes saved but will also havethe option to remove a recipe by pressing on the recipe and then pressing the delete button while the recipe is highlighted in blue.The user will also have the option to scale his measurements, this will allow the user to make more as now the recipes havebeen increased incase the user wants to make for others.Lastly if the user is done with everything and is happy he will be now able to press the exit app button and exit the application.
