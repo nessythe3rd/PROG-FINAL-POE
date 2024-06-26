@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="LightBlue">
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="225" Width="340">
-            <Button Content="Add Recipe" Click="AddRecipe_Click" Margin="5" BorderBrush="Black" Background="#FFB0D7F5"/>
-            <Button Content="View Recipe" Click="ViewRecipe_Click" Margin="5" Background="#FFB0D7F5"/>
-            <Button Content="Scale Recipe" Click="ScaleRecipe_Click" Margin="5" Background="#FFB0D7F5"/>
-            <Button Content="Delete Recipe" Click="DeleteRecipe_Click" Margin="5" Background="#FFB0D7F5"/>
-            <Button Content="Filter Recipe" Click="FilterRecipe_Click" Margin="5" Background="#FFB0D7F5"/>
-            <Button Content="Exit App" Click="ExitApp_Click" Margin="5" Background="#FFB0D7F5"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Add Recipe" Click="AddRecipe_Click" Margin="5"/>
+            <Button Content="View Recipe" Click="ViewRecipe_Click" Margin="5"/>
+            <Button Content="Scale Recipe" Click="ScaleRecipe_Click" Margin="5"/>
+            <Button Content="Delete Recipe" Click="DeleteRecipe_Click" Margin="5"/>
+            <Button Content="Filter Recipe" Click="FilterRecipe_Click" Margin="5"/>
+            <Button Content="Exit App" Click="ExitApp_Click" Margin="5"/>
         </StackPanel>
         <TextBlock HorizontalAlignment="Center" Margin="0,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"><Run Language="en-gb" Text="RECIPE APP"/></TextBlock>
         <Image Margin="456,77,23,16" Source="/IMAGES/cooking-removebg-preview.png"/>

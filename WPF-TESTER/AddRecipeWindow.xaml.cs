@@ -56,7 +56,7 @@ namespace WPF_TESTER
                 MessageBox.Show("Please fill all fields including Calorie Measurements and Recipe Measurements.");
             }
         }
-
+        //Empty Text boxes
         private void ClearTextBoxes()
         {
             RecipeName.Text = "";
@@ -64,7 +64,8 @@ namespace WPF_TESTER
             EnterIngredients.Text = "";
             Instructions.Text = "";
             CalorieMeasurements.Text = "";
-            RecipeMeasurements.SelectedIndex = 0; // Set the dropdown back to grams
+            //Reset backs to grams
+            RecipeMeasurements.SelectedIndex = 0; 
         }
 
         private void ViewRecipes_Click(object sender, RoutedEventArgs e)
@@ -72,7 +73,7 @@ namespace WPF_TESTER
             var filterRecipeWindow = new FilterRecipeWindow(Recipes);
             filterRecipeWindow.Show();
         }
-
+        //Back Button
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             this.Close();

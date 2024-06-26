@@ -2,26 +2,35 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Add Recipe" Height="450" Width="800">
-    <Grid Background="LightBlue" Margin="0,0,-342,-341">
+    <Grid Background="LightBlue" Margin="0,0,-205,-269">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="529">
-            <TextBlock FontSize="20" Foreground="Black" Margin="0 10 0 5"><Run Language="en-za" Text="                                    "/><Run Text="Recipe Name"/></TextBlock>
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="675" Height="659">
+            <TextBlock FontSize="20" Foreground="Black" Margin="0 10 0 5"><Run Language="en-za" Text=""/><Run Text="Recipe Name"/></TextBlock>
             <TextBox x:Name="RecipeName" Width="200" Margin="0 0 0 10"/>
 
-            <TextBlock FontSize="20" Foreground="Black" Margin="0 10 0 5"><Run Language="en-za" Text="                              "/><Run Text="Number of Ingredients"/></TextBlock>
+            <TextBlock FontSize="20" Foreground="Black" Margin="0 10 0 5"><Run Language="en-za" Text=""/><Run Text="Number of Ingredients"/></TextBlock>
             <TextBox x:Name="HowManyIngredients" Width="200" Margin="0 0 0 10"/>
 
-            <TextBlock FontSize="20" Foreground="Black" Margin="0 10 0 5"><Run Language="en-za" Text="                                 "/><Run Text="Enter Ingredients"/></TextBlock>
+            <TextBlock FontSize="20" Foreground="Black" Margin="0 10 0 5"><Run Language="en-za" Text=""/><Run Text="Enter Ingredients"/></TextBlock>
             <TextBox x:Name="EnterIngredients" Width="200" Margin="0 0 0 10"/>
-            <TextBlock FontSize="20" Foreground="Black"><Run Language="en-za" Text="                                    "/><Run Text="Food Group"/></TextBlock>
-            <TextBox x:Name="FoodGroup" Width="200"/>
 
-            <TextBlock FontSize="20" Foreground="Black" Margin="0 10 0 5"><Run Language="en-za" Text="                                     "/><Run Text="Instructions"/></TextBlock>
+            <TextBlock FontSize="20" Foreground="Black" Margin="0 10 0 5"><Run Language="en-za" Text=""/><Run Text="Food Group"/></TextBlock>
+            <ComboBox x:Name="FoodGroup" Width="200" Margin="0 0 0 10">
+                <ComboBoxItem Content="Fruits"/>
+                <ComboBoxItem Content="Vegetables"/>
+                <ComboBoxItem Content="Grains"/>
+                <ComboBoxItem Content="Proteins"/>
+                <ComboBoxItem Content="Dairy"/>
+                <ComboBoxItem Content="Fats and Oils"/>
+                <ComboBoxItem Content="Sweets"/>
+            </ComboBox>
+
+            <TextBlock FontSize="20" Foreground="Black" Margin="0 10 0 5"><Run Language="en-za" Text="                                       "/><Run Text="Instructions"/></TextBlock>
             <TextBox x:Name="Instructions" Width="350" Height="100" Margin="0 0 0 10"/>
 
             <TextBlock FontSize="20" Foreground="Black" Margin="0 10 0 5"><Run Language="en-za" Text="                              "/><Run Text="Calorie Measurements"/></TextBlock>
@@ -40,11 +49,7 @@
                 <ComboBoxItem Content="500 grams"/>
                 <ComboBoxItem Content="1 cups"/>
                 <ComboBoxItem Content="2 cups"/>
-
-
             </ComboBox>
-
-            <!-- New section for Food Group -->
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button Content="Add Recipe" Width="150" Margin="5" Click="AddRecipe_Click"/>
@@ -52,6 +57,5 @@
                 <Button Content="Back" Width="150" Margin="5" Click="Back_Click"/>
             </StackPanel>
         </StackPanel>
-        <TextBlock FontSize="24" Foreground="Black" Margin="492,39,469,709" Grid.RowSpan="2" FontWeight="Bold"><Run Language="en-za" Text="Add A Recipe"/></TextBlock>
     </Grid>
 </Window>
