@@ -99,5 +99,6 @@ namespace WPF_TESTER
         public string Instructions { get; set; }
         public string CalorieMeasurements { get; set; }
         public string RecipeMeasurements { get; set; }
+        public string FoodGroup { get; set; }
     }
 }
