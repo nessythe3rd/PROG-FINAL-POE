@@ -7,27 +7,11 @@
             <TextBlock Text="Search Recipes" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
 
             <Grid Margin="0 0 0 10">
-                <TextBox x:Name="SearchByName" Width="200" Margin="0 0 0 0" 
+                <TextBox x:Name="SearchByName" Width="200" Margin="0 0 0 0"
                          GotFocus="RemoveText" LostFocus="AddText"/>
-                <TextBlock Text="Search by name" Foreground="Gray" 
-                           VerticalAlignment="Center" HorizontalAlignment="Left" 
-                           Margin="5,0,0,0" IsHitTestVisible="False" />
-            </Grid>
-
-            <Grid Margin="0 0 0 10">
-                <TextBox x:Name="SearchByIngredients" Width="200" Margin="0 0 0 0" 
-                         GotFocus="RemoveText" LostFocus="AddText"/>
-                <TextBlock Text="Search by ingredients" Foreground="Gray" 
-                           VerticalAlignment="Center" HorizontalAlignment="Left" 
-                           Margin="5,0,0,0" IsHitTestVisible="False" />
-            </Grid>
-
-            <Grid Margin="0 0 0 10">
-                <TextBox x:Name="SearchByCalories" Width="200" Margin="0 0 0 0" 
-                         GotFocus="RemoveText" LostFocus="AddText"/>
-                <TextBlock Text="Search by calories" Foreground="Gray" 
-                           VerticalAlignment="Center" HorizontalAlignment="Left" 
-                           Margin="5,0,0,0" IsHitTestVisible="False" />
+                <TextBlock Text="Search by name" Foreground="Gray"
+                           VerticalAlignment="Center" HorizontalAlignment="Left"
+                           Margin="5,0,0,0" IsHitTestVisible="False"/>
             </Grid>
 
             <Button Content="Search" Width="150" Margin="0 0 0 10" Click="Search_Click"/>

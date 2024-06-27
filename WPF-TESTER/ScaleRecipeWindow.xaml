@@ -8,14 +8,14 @@
         Title="Scale Recipe" Height="450" Width="800">
     <Grid Background="LightBlue">
         <StackPanel>
-            <TextBlock Text="Scale Recipe" FontSize="16" FontWeight="Bold" Margin="10"/>
+            <TextBlock Text="Scale Recipe" FontSize="16" FontWeight="Bold" Margin="10" Width="100"/>
             <ComboBox x:Name="RecipeList" Width="200" Margin="10" SelectionChanged="RecipeList_SelectionChanged">
-                <!-- Recipe list will be populated dynamically -->
+             
             </ComboBox>
 
             <TextBlock x:Name="RecipeDetails" Margin="10"/>
-            <TextBlock Text="Scaling Factor:" Margin="10"/>
-            <StackPanel Orientation="Horizontal" Margin="10">
+            <TextBlock Text="Scaling Factor:" Margin="10" Width="81"/>
+            <StackPanel Orientation="Horizontal" Margin="10" Width="178">
                 <Button Content="0.5" Width="50" Margin="5" Click="Scale_Click"/>
                 <Button Content="2" Width="50" Margin="5" Click="Scale_Click"/>
                 <Button Content="3" Width="50" Margin="5" Click="Scale_Click"/>

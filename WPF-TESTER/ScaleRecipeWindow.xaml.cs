@@ -51,7 +51,7 @@ namespace WPF_TESTER
                 MessageBox.Show("Please select a recipe first.");
                 return;
             }
-
+            //Error-scaling at 0.5 doest work
             Button button = sender as Button;
             double scaleFactor = double.Parse(button.Content.ToString());
 

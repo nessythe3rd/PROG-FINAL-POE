@@ -24,23 +24,20 @@ namespace WPF_TESTER
             AllRecipes = recipes;
             AddText(null, null); // Initialize placeholder text
         }
-        //Search button
+
         private void Search_Click(object sender, RoutedEventArgs e)
         {
-            var nameQuery = SearchByName.Text.ToLower();
-            var ingredientsQuery = SearchByIngredients.Text.ToLower();
-            var caloriesQuery = SearchByCalories.Text.ToLower();
+            var searchText = SearchByName.Text.ToLower();
 
-            var filteredRecipes = AllRecipes.Where(r =>
-                (string.IsNullOrEmpty(nameQuery) || r.Name.ToLower().Contains(nameQuery)) &&
-                (string.IsNullOrEmpty(ingredientsQuery) || r.Ingredients.ToLower().Contains(ingredientsQuery)) &&
-                (string.IsNullOrEmpty(caloriesQuery) || r.CalorieMeasurements.ToLower().Contains(caloriesQuery))
-            ).OrderBy(r => r.Name).ToList();
+            var filteredRecipes = AllRecipes
+                .Where(r => r.Name.ToLower().Contains(searchText))
+                .OrderBy(r => r.Name)
+                .ToList();
 
-            RecipeList.ItemsSource = filteredRecipes.Select(r => r.Name).ToList();
+            RecipeList.ItemsSource = filteredRecipes.Select(r => $"{r.Name} - {r.NumberOfIngredients} ingredients, {r.CalorieMeasurements} calories").ToList();
         }
 
-        private void RemoveText(object sender, EventArgs e)
+        private void RemoveText(object sender, RoutedEventArgs e)
         {
             TextBox textBox = sender as TextBox;
             if (textBox != null && textBox.Text == "")
@@ -50,27 +47,15 @@ namespace WPF_TESTER
             }
         }
 
-        private void AddText(object sender, EventArgs e)
+        private void AddText(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrEmpty(SearchByName.Text))
             {
-                SearchByName.Text = "";
+                SearchByName.Text = "Search by name";
                 SearchByName.Foreground = Brushes.Gray;
             }
-
-            if (string.IsNullOrEmpty(SearchByIngredients.Text))
-            {
-                SearchByIngredients.Text = "";
-                SearchByIngredients.Foreground = Brushes.Gray;
-            }
-
-            if (string.IsNullOrEmpty(SearchByCalories.Text))
-            {
-                SearchByCalories.Text = "";
-                SearchByCalories.Foreground = Brushes.Gray;
-            }
         }
-        //Back Button
+
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
